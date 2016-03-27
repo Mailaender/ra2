@@ -277,3 +277,41 @@ ivan:
 		IdleSequences: idle1,idle2
 	QuantizeFacingsFromSequence:
 		Sequence: stand
+
+yuri:
+	Inherits: ^Infantry
+	Buildable:
+		Queue: Infantry
+		BuildAtProductionType: Infantry
+		BuildPaletteOrder: 180
+		Prerequisites: natech, ~nahand
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Yuri
+		Description: Bender of spoons!
+	Selectable:
+		Bounds: 20, 30, 0, -11
+	Voiced:
+		VoiceSet: YuriVoice
+	Health:
+		HP: 100
+	Mobile:
+		Speed: 40
+	RevealsShroud:
+		Range: 12c0
+	Armor:
+		Type: None
+	Passenger:
+		PipType: Red
+	Armament@primary:
+		Weapon: MindControl
+#	Armament@secondary:
+#		Weapon: PsiWave
+	AttackLoyalty:
+		Voice: Attack
+	TakeCover:
+	WithInfantryBody:
+		IdleSequences: idle1,idle2
+	QuantizeFacingsFromSequence:
+		Sequence: stand

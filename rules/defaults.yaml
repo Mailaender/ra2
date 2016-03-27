@@ -326,6 +326,7 @@
 		Voice: Move
 	Chronoshiftable:
 		ExplodeInstead: true
+	MindControllable:
 
 ^CivilianInfantry:
 	Inherits: ^Infantry

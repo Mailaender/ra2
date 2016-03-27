@@ -322,3 +322,23 @@ IvanBomberE:
 		Delay: 100
 		Explosions: ivan_explosionE
 		ImpactSounds: gexpcraa.wav
+
+MindControl:
+	ReloadDelay: 200
+	Range: 30c0
+	Projectile: Bullet
+		Speed: 100
+		High: true
+	Warhead@1Dam: SpreadDamage
+		Spread: 10
+		Damage: 10
+		Versus:
+			None: 100
+			Flak: 0
+			Plate: 0
+			Light: 0
+			Medium: 0
+			Heavy: 0
+			Wood: 0
+			Steel: 0
+			Concrete: 0

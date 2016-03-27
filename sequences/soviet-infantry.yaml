@@ -366,3 +366,56 @@ ivan:
 		Facings: 8
 		Tick: 80
 	icon: ivanicon
+
+yuri:
+	icon: yuriicon
+	stand:
+		Facings: 1
+	run:
+		Start: 8
+		Length: 6
+		Facings: 6
+	idle1:
+		Start: 56
+		Length: 15
+	idle2:
+		Start: 71
+		Length: 15
+	prone-stand:
+		Start: 86
+		Facings: 6
+	prone-run:
+		Start: 86
+		Length: 6
+		Facings: 6
+	die1:
+		Start: 134
+		Length: 14
+	die1:
+		Start: 149
+		Length: 14
+	die4: nukedie
+		Length: *
+		Tick: 50
+		# Problem: Palette = effect
+	die5: flameguy
+		Start: 48
+		Length: 59
+		Tick: 80
+# TODO: This is just the death sequence; normally flameguy would run a bit around before dying
+	die6: electro
+		Length: *
+		Tick: 80
+	die-crushed: death_c
+		Length: 4
+		Tick: 80
+	shoot:
+		Start: 164
+		Length: 6
+		Facings: 6
+	prone-shoot:
+		Start: 212
+		Length: 6
+		Facings: 6
+	paradrop:
+		Start: 307

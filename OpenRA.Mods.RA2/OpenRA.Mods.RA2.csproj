@@ -62,7 +62,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Activities\ChronoResourceTeleport.cs" />
+    <Compile Include="Traits\Attack\AttackLoyalty.cs" />
     <Compile Include="Traits\ChronoResourceDelivery.cs" />
+    <Compile Include="Traits\MindControllable.cs" />
     <Compile Include="Traits\Render\WithExitOverlay.cs" />
   </ItemGroup>
 </Project>
