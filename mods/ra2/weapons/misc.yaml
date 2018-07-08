@@ -73,3 +73,16 @@ PsiWave:
 		DamageTypes: PsychicDeath
 	Warhead@2Eff: CreateEffect
 		Explosions: psi_wave
+
+V3Launcher:
+	ReloadDelay: 240
+	Burst: 2
+	BurstDelay: 20
+	Range: 12c0
+	MinRange: 3c0
+	Projectile: Bullet
+		Speed: 10c0
+	Warhead@1Dam: SpreadDamage
+		Spread: 1
+		Damage: 0
+		ValidTargets: Building, Ground, Water

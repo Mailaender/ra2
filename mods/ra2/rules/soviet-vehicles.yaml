@@ -381,3 +381,61 @@ dtruck:
 	Voiced:
 		VoiceSet: DemolitionTruckVoice
 	HitShape:
+
+v3:
+	Inherits: ^Vehicle
+	Inherits@AUTOTARGET: ^AutoTargetGroundAssaultMove
+	Inherits@MC: ^MindControllable
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 80
+		Prerequisites: ~naweap, naradr
+		Description: Long-range rocket artillery.
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: V3 Launcher
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 85
+	RevealsShroud:
+		Range: 7c0
+	Armament:
+		Weapon: V3Launcher
+	AttackFrontal:
+		Voice: Attack
+	MissileSpawnerMaster:
+		Actors: v3rocket
+		SpawnIsMissile: true
+		RespawnTicks: 120
+	Explodes:
+		Weapon: UnitExplode
+	RenderSprites:
+	RenderVoxels:
+	WithVoxelBody:
+	HitShape:
+	Voiced:
+		VoiceSet: SovietVehicleVoice
+
+v3rocket:
+	Inherits: ^ShootableMissile
+	Valued:
+		Cost: 50
+	Tooltip:
+		Name: V3
+	Health:
+		HP: 50
+	Armor:
+		Type: Light
+	ShootableBallisticMissile:
+		LaunchAngle: 128
+		Speed: 170
+	Contrail:
+		Offset: -598,0,0
+	MissileSpawnerSlave:
+	SpawnedExplodes:
+		Weapon: UnitExplode
+		EmptyWeapon: UnitExplode
